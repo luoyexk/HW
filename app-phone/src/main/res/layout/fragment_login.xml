@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+             android:orientation="vertical"
+             android:background="@color/emui_white"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_margin="8dp"
+                  android:background="#11000000"
+                  android:orientation="vertical"
+                  android:padding="16dp">
+
+        <EditText android:layout_width="match_parent" android:id="@+id/et_email" android:layout_height="wrap_content"
+                  android:hint="邮箱"/>
+
+
+        <EditText android:layout_width="match_parent" android:id="@+id/et_password_login"
+                  android:layout_height="wrap_content"
+                  android:hint="密码"/>
+        <com.huawei.uikit.hwbutton.widget.HwButton android:layout_width="wrap_content"
+                                                   android:onClick="onClick"
+                                                   style="@style/Widget.Emui.HwButton.Emphasize"
+                                                   android:id="@+id/btn_login"
+                                                   android:layout_gravity="end"
+                                                   android:layout_height="wrap_content" android:text="登陆"/>
+    </LinearLayout>
+
+    <com.huawei.uikit.hwprogressbar.widget.HwProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            style="@style/Widget.Emui.HwProgressBar" android:id="@+id/hwProgressBar"/>
+</FrameLayout>

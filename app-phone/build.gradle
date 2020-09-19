@@ -1,4 +1,7 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 
 apply plugin: 'com.huawei.multibuild.mbuildplugin'
 apply plugin: 'com.huawei.agconnect'
@@ -47,4 +50,9 @@ dependencies {
     implementation 'com.huawei.ui.uikit:hwtextview-phone:1.0.0.500'
     implementation 'com.huawei.ui.uikit:hwfloatingactionbutton-phone:1.0.0.500'
     implementation 'com.huawei.ui.uikit:hwtoggle-phone:1.0.0.500'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.huawei.ui.uikit:hwprogressbar-phone:1.0.0.500'
+}
+repositories {
+    mavenCentral()
 }
